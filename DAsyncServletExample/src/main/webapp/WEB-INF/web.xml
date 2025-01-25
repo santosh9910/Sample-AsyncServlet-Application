@@ -1,0 +1,15 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <servlet>
+        <servlet-name>AsyncServlet</servlet-name>
+        <servlet-class>com.cavisson.serv.AsyncServlet</servlet-class> <!-- Corrected class name -->
+        <async-supported>true</async-supported> <!-- Enable async processing -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AsyncServlet</servlet-name> <!-- Same as the servlet-name above -->
+        <url-pattern>/async</url-pattern>
+    </servlet-mapping>
+</web-app>
